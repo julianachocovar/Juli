@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/main.css">
 <title>THE LION KINGS</title>
 <LINk rel="icon" type="image/x-icon" href="./assets/img/eng.png">
 <meta name="description" content="Diseñá tu propio futuro">
@@ -80,6 +81,41 @@
         </a>
     </div>
 <p>Ofreciendo nuestro servicio a la comunidad para facilitar la insercion de niños, adolescentes y adultos a un mundo totalmente globalizado.</p>
+
+
+<button class="accordion">1. ¿Por qué elegirnos?</button>
+<div class="panel">
+<p>Porque brindamos excelencia en lo que hacemos y utilizamos los últimos recursos educativos disponibles para ubicarnos en la vanguardia del aprendizaje de la lengua extranjera.</p>
+</div>
+
+<button class="accordion">2. ¿Tenemos profes nativos?</button>
+<div class="panel">
+<p>Así es! Contamos no solo con docentes con título habilitante sino tambien con hablantes nativos del Inglés.</p>
+</div>
+
+<button class="accordion">3. ¿Hay planes de pago disponibles?</button>
+<div class="panel">
+<p>Claro! La idea es brindarte todas las herramientas posibles para que solamente te enfoques en aprender.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+    var arrow = this.querySelector(".arrow-down");
+    arrow.classList.toggle("active");
+  });
+}
+</script>
 </body>
 <footer> <h4>Propiedad de Juliana Chocovar - Argentina 2023</h4>
 </footer>

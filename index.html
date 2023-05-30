@@ -23,36 +23,18 @@
 <!-- Bootstrap JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Inicio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/alumnos.html">Alumnos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/quienes.html">Trabajan con nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/cursos.html">Cursos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-            </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
+<body>
+    <ul class="navbar">
+        <li class="logo"><a href="./index.html"><img src="./assets/img/eng.png" alt="Logo"></a></li>
+        <li><a href="./pages/alumnos.html">ALUMNOS</a></li>
+        <li><a href="./pages/quienes.html">TRABAJAN CON NOSOTROS</a></li>
+        <li><a href="./pages/cursos.html">CURSOS</a></li>
+        <li><a href="./pages/contacto.html">CONTACTO</a></li>
+    </ul>
 
     <h1 class="display-1">THE LION KINGS - SCHOOL OF ENGLISH</h1>
     <h1 class="display-2">Enseñando lengua extranjera desde 2010</h1>
-
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -82,7 +64,6 @@
     </div>
 <p>Ofreciendo nuestro servicio a la comunidad para facilitar la insercion de niños, adolescentes y adultos a un mundo totalmente globalizado.</p>
 
-
 <button class="accordion">1. ¿Por qué elegirnos?</button>
 <div class="panel">
 <p>Porque brindamos excelencia en lo que hacemos y utilizamos los últimos recursos educativos disponibles para ubicarnos en la vanguardia del aprendizaje de la lengua extranjera.</p>
@@ -103,18 +84,19 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
-      panel.style.display = "none";
+    panel.style.display = "none";
     } else {
-      panel.style.display = "block";
+    panel.style.display = "block";
     }
     var arrow = this.querySelector(".arrow-down");
     arrow.classList.toggle("active");
-  });
+});
 }
+
 </script>
 </body>
 <footer> <h4>Propiedad de Juliana Chocovar - Argentina 2023</h4>
